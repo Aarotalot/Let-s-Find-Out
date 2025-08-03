@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let’s Find Out</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #4b6cb7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background: #4b6cb7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Let’s Find Out</h1>
+  <p>A place to share & discuss Past Year Questions from AS, A Levels, and SATs.</p>
+</header>
+
+<main>
+  <section>
+    <h2>📚 Post a Question or Answer</h2>
+    <form onsubmit="alert('This is a demo — form not actually submitted.'); return false;">
+      <label for="exam">Select Exam:</label>
+      <select id="exam" required>
+        <option value="">--Choose--</option>
+        <option value="AS">AS Level</option>
+        <option value="A">A Level</option>
+        <option value="SAT">SAT</option>
+      </select>
+
+      <label for="type">Post Type:</label>
+      <select id="type" required>
+        <option value="">--Choose--</option>
+        <option value="question">Ask a Question</option>
+        <option value="answer">Answer a Question</option>
+      </select>
+
+      <label for="content">Your Question or Answer:</label>
+      <textarea id="content" rows="5" placeholder="Type your question or answer here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>📄 Sample Posts</h2>
+    <p><strong>[AS Level]</strong> How do you differentiate sin(x²)?</p>
+    <p><strong>Answer:</strong> Use chain rule: d/dx[sin(x²)] = 2x·cos(x²)</p>
+  </section>
+</main>
+
+</body>
+</html>
